@@ -9,6 +9,8 @@ import AppReviews from '../app-reviews';
 import AppLegalService from '../app-legal-service';
 import AppSchedule from '../app-schedule';
 import AppTrainingOnline from '../app-training/training-online';
+import AppTrainingDistant from '../app-training/training-distant';
+import AppTrainingOnSite from '../app-training/training-on-site';
 
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
@@ -35,6 +37,8 @@ export default class App extends Component {
             <Route path="/legal-service" component={AppLegalService} />
             <Route path="/schedule" component={AppSchedule} />
             <Route path="/training/online" component={AppTrainingOnline} />
+            <Route path="/training/on-site" component={AppTrainingOnSite} />
+            <Route path="/training/distant" component={AppTrainingDistant} />
           </div>
 
           <div className="p-2 bg-light border">
