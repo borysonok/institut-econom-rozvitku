@@ -1,2 +1,2 @@
 
-# Institut Econom Rozvitku
+# Institut Economychnogo Rozvytku

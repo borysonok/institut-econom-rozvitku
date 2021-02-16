@@ -6,7 +6,7 @@ export default class AppTrainingDistant extends Component {
   render() {
     return (
       <div className='training-distant'>
-        <p>Component: Training distant...</p>
+        <p>Component: Training Distant...</p>
       </div>
     );
   }

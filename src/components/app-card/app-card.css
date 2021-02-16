@@ -1,0 +1,11 @@
+.app-card {
+  background-color: rgb(42, 233, 233);
+}
+
+button>a {
+  color: white;
+}
+
+button>a:hover {
+  text-decoration: none;
+}

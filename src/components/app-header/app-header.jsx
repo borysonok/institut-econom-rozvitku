@@ -1,77 +1,35 @@
 import React, { Component } from 'react';
-import DropdownButton from 'react-bootstrap/DropdownButton';
-import Dropdown from 'react-bootstrap/Dropdown';
 
-import { Link } from 'react-router-dom';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+
+import { LinkContainer } from 'react-router-bootstrap';
 
 import './app-header.css';
 
 export default class AppHeader extends Component {
   render() {
     return (
-      <div className='container-fluid app-header'>
-        <div className="row d-flex justify-content-between">
-
-          <div className="p-3">LOGO</div>
-
-          <div>
-            <div className="row justify-content-end">
-              <div className="p-3">Language</div>
-            </div>
-
-            <div className="row">
-              <ul className="nav nav-pills justify-content-end">
-
-                <li className="nav-item">
-                  <Link to='/main' className="nav-link" aria-current="page">
-                    Main
-                  </Link>
-                </li>
-
-                <li className="nav-item">
-                  <Link to='/about' className="nav-link">
-                    About
-                  </Link>
-                </li>
-
-                <li className="nav-item dropdown">
-                  <DropdownButton title="Training">
-                    <Dropdown.Item><Link to='/training/on-site'>On-Site Training</Link></Dropdown.Item>
-                    <Dropdown.Item><Link to='/training/distant'>Distant Training</Link></Dropdown.Item>
-                    <Dropdown.Item><Link to='/training/online'>Online Training</Link></Dropdown.Item>
-                  </DropdownButton>
-                </li>
-
-                <li className="nav-item">
-                  <Link to='/legal-service' className="nav-link">
-                    Legal Service
-                  </Link>
-                </li>
-
-                <li className="nav-item">
-                  <Link to='/schedule' className="nav-link">
-                    Schedule
-                  </Link>
-                </li>
-
-                <li className="nav-item">
-                  <Link to='/reviews' className="nav-link">
-                    Reviews
-                  </Link>
-                </li>
-
-                <li className="nav-item">
-                  <Link to='/contacts' className="nav-link">
-                    Contacts
-                  </Link>
-                </li>
-
-              </ul>
-            </div>
-          </div>
-
-        </div>
-      </div>
+      <Navbar bg="light" expand="lg">
+        <LinkContainer to="/"><Navbar.Brand>LOGO</Navbar.Brand></LinkContainer>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mr-auto">
+            <LinkContainer to="/main"><Nav.Link>Main</Nav.Link></LinkContainer>
+            <LinkContainer to="/about"><Nav.Link>About</Nav.Link></LinkContainer>
+            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+              <LinkContainer to='/training/on-site'><NavDropdown.Item>On-Site Training</NavDropdown.Item></LinkContainer>
+              <LinkContainer to='/training/distant'><NavDropdown.Item>Distant Training</NavDropdown.Item></LinkContainer>
+              <LinkContainer to='/training/online'><NavDropdown.Item>Online Training</NavDropdown.Item></LinkContainer>
+            </NavDropdown>
+            <LinkContainer to='/legal-service'><Nav.Link>Legal Service</Nav.Link></LinkContainer>
+            <LinkContainer to="/schedule"><Nav.Link>Schedule</Nav.Link></LinkContainer>
+            <LinkContainer to='/reviews'><Nav.Link>Reviews</Nav.Link></LinkContainer>
+            <LinkContainer to='/contacts'><Nav.Link>Contacts</Nav.Link></LinkContainer>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     );
   }
 }

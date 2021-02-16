@@ -6,7 +6,7 @@ export default class AppTrainingOnline extends Component {
   render() {
     return (
       <div className='training-online'>
-        <p>Component: Training Online...</p>
+        <div>Component: Training Online...</div>
       </div>
     );
   }
