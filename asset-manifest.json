@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/institut-econom-rozvitku/static/css/main.42e09508.chunk.css",
+    "main.js": "/institut-econom-rozvitku/static/js/main.cff790dc.chunk.js",
+    "main.js.map": "/institut-econom-rozvitku/static/js/main.cff790dc.chunk.js.map",
+    "runtime-main.js": "/institut-econom-rozvitku/static/js/runtime-main.091f56ac.js",
+    "runtime-main.js.map": "/institut-econom-rozvitku/static/js/runtime-main.091f56ac.js.map",
+    "static/css/2.27dd871e.chunk.css": "/institut-econom-rozvitku/static/css/2.27dd871e.chunk.css",
+    "static/js/2.75eb00ed.chunk.js": "/institut-econom-rozvitku/static/js/2.75eb00ed.chunk.js",
+    "static/js/2.75eb00ed.chunk.js.map": "/institut-econom-rozvitku/static/js/2.75eb00ed.chunk.js.map",
+    "index.html": "/institut-econom-rozvitku/index.html",
+    "static/css/2.27dd871e.chunk.css.map": "/institut-econom-rozvitku/static/css/2.27dd871e.chunk.css.map",
+    "static/css/main.42e09508.chunk.css.map": "/institut-econom-rozvitku/static/css/main.42e09508.chunk.css.map",
+    "static/js/2.75eb00ed.chunk.js.LICENSE.txt": "/institut-econom-rozvitku/static/js/2.75eb00ed.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.091f56ac.js",
+    "static/css/2.27dd871e.chunk.css",
+    "static/js/2.75eb00ed.chunk.js",
+    "static/css/main.42e09508.chunk.css",
+    "static/js/main.cff790dc.chunk.js"
+  ]
+}
